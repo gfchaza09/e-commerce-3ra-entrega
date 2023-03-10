@@ -1,0 +1,12 @@
+[2023-03-08T14:43:36.788] [WARN] warn - GET /api/productos - Ruta inexistente
+[2023-03-08T14:44:27.153] [WARN] warn - GET /api/productos - Ruta inexistente
+[2023-03-08T14:44:58.459] [WARN] warn - GET /favicon.ico - Ruta inexistente
+[2023-03-08T14:50:19.491] [WARN] warn - GET /api/carrito/KIKcHIIp1RHv2MjhHbaY/productos - Ruta inexistente
+[2023-03-08T14:51:32.602] [WARN] warn - GET /api/carrito/KIKcHIIp1RHv2MjhHbaY/productos - Ruta inexistente
+[2023-03-08T14:51:34.770] [WARN] warn - GET /api/carrito/KIKcHIIp1RHv2MjhHbaY/productos - Ruta inexistente
+[2023-03-08T14:52:50.512] [WARN] warn - GET /api/carrito/63bb7f2632c5c4c5403c8b88/productos - Ruta inexistente
+[2023-03-08T14:53:06.417] [WARN] warn - GET /api/carrito/63bb7f2632c5c4c5403c8b88/productos - Ruta inexistente
+[2023-03-08T15:07:28.111] [WARN] warn - POST /sigunp - Ruta inexistente
+[2023-03-08T15:07:44.501] [WARN] warn - POST /signup - Ruta inexistente
+[2023-03-09T00:54:06.627] [WARN] warn - POST /login - Ruta inexistente
+[2023-03-09T12:14:47.452] [WARN] warn - GET / - Ruta inexistente
