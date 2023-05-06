@@ -14,7 +14,7 @@ const MODE = config.MODE;
 const server = http.createServer(app);
 const io = new WebSocketServer(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://ecommerce-peke-shop.netlify.app",
   },
 });
 
