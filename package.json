@@ -2,14 +2,15 @@
   "type": "module",
   "name": "proyecto-eccomerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto Final del curso de Desarrollo BackEnd de CoderHouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/main.js"
+    "dev": "nodemon src/main.js -n development",
+    "start": "node src/main.js -n production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriel Chazarreta",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -28,6 +29,7 @@
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+    "socket.io": "^4.6.1",
     "twilio": "^4.8.0",
     "yargs": "^17.7.1"
   },

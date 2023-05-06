@@ -353,3 +353,1189 @@
   _message: 'users validation failed'
 }
 [2023-03-10T14:56:09.430] [ERROR] error - Error en servidor Error: listen EADDRINUSE: address already in use :::8080
+[2023-04-24T01:16:19.910] [ERROR] error - CastError: Cast to ObjectId failed for value "3123" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"3123"',
+  kind: 'ObjectId',
+  value: '3123',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-24T01:16:19.915] [ERROR] error - GET /api/productos/3123 404
+[2023-04-24T12:30:13.668] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T12:35:53.209] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:27:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T12:36:17.977] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:34)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T20:34:03.715] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T20:35:42.321] [ERROR] error - GET /api/productos/63b75be9f28ff78be98b5492 404
+[2023-04-24T20:39:42.429] [ERROR] error - CastError: Cast to ObjectId failed for value "644712d8821bc21a69829955dsa" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"644712d8821bc21a69829955dsa"',
+  kind: 'ObjectId',
+  value: '644712d8821bc21a69829955dsa',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-24T20:39:42.432] [ERROR] error - PUT /api/productos/644712d8821bc21a69829955dsa 404
+[2023-04-24T20:45:32.600] [ERROR] error - GET /api/productos/63b75be9f28ff78be98b5492 404
+[2023-04-24T21:01:43.942] [ERROR] error - POST /api/carrito 422
+[2023-04-24T21:03:13.577] [ERROR] error - POST /api/carrito 422
+[2023-04-24T21:04:17.999] [ERROR] error - POST /api/carrito 422
+[2023-04-24T21:04:38.162] [ERROR] error - POST /api/carrito 422
+[2023-04-24T21:06:12.543] [ERROR] error - POST /api/carrito/6447194639a8ad88dc716422/productos 404
+[2023-04-24T21:07:37.313] [ERROR] error - GET /api/productos/64471505092a585c018b0457 404
+[2023-04-24T21:08:20.330] [ERROR] error - POST /api/carrito/6447194639a8ad88dc716422/productos 404
+[2023-04-24T21:43:55.834] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T21:46:37.282] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:27:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/middleware/passport.js:19:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T21:48:05.349] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at UserDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at Strategy._verify (file:///D:/Cursos/CoderHouse/e-commerce3/src/server.js:34:41)
+    at Strategy.authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\Cursos\CoderHouse\e-commerce3\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:49:5
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Cursos\CoderHouse\e-commerce3\node_modules\express\lib\router\layer.js:95:5)
+[2023-04-24T21:56:31.967] [ERROR] error - Error: users validation failed: tel: Path `tel` is required.
+    at ValidationError.inspect (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:763:19)
+    at inspect (node:internal/util/inspect:340:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2006:40)
+    at Object.format (node:internal/util/inspect:1880:10)
+    at basicLayout (D:\Cursos\CoderHouse\e-commerce3\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Cursos\CoderHouse\e-commerce3\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Cursos\CoderHouse\e-commerce3\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    tel: ValidatorError: Path `tel` is required.
+        at validate (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1346:13)
+        at Phone.SchemaType.doValidate (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1330:7)
+        at D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\document.js:2903:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'tel',
+      value: '+549+5493885470980',
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2023-04-25T18:30:27.194] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:8:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-04-25T18:30:27.203] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:8:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-04-25T18:30:57.182] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:8:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-04-25T18:30:57.189] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:8:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-04-27T16:14:44.733] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:14:44.737] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:15:20.973] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:15:20.977] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:15:20.982] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:15:20.987] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:16:20.977] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:16:20.981] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:06.769] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:06.772] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:10.759] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:10.763] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:10.767] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:10.770] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:15.230] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:15.234] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:17.333] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:17.336] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:17:17.340] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:17:17.344] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:18:34.813] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:18:34.816] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:18:39.115] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:18:39.118] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:18:39.124] [ERROR] error - CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"null"',
+  kind: 'ObjectId',
+  value: 'null',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:18:39.128] [ERROR] error - GET /api/carrito/null/productos 404
+[2023-04-27T16:21:35.667] [ERROR] error - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"undefined"',
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:21:35.671] [ERROR] error - GET /api/carrito/undefined/productos 404
+[2023-04-27T16:21:53.684] [ERROR] error - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "carritos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"undefined"',
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-27T16:21:53.688] [ERROR] error - GET /api/carrito/undefined/productos 404
+[2023-04-27T19:37:39.023] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_id')
+    at CartDaoMongoDb.deleteProductCart (file:///D:/Cursos/CoderHouse/e-commerce3/src/daos/cart/CartDaoMongoDb.js:37:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async CartDaoMongoDb.createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/daos/cart/CartDaoMongoDb.js:19:9)
+    at async CartService.createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/cart.service.js:34:14)
+    at async createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/cart.controller.js:61:7)
+[2023-04-27T19:40:27.303] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at CartDaoMongoDb.deleteProductCart (file:///D:/Cursos/CoderHouse/e-commerce3/src/daos/cart/CartDaoMongoDb.js:38:49)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async CartDaoMongoDb.createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/daos/cart/CartDaoMongoDb.js:19:9)
+    at async CartService.createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/cart.service.js:34:14)
+    at async createProductOfACart (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/cart.controller.js:61:7)
+[2023-04-27T19:41:55.781] [ERROR] error - CastError: Cast to Number failed for value "NaN" (type number) at path "total"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'Number',
+  value: NaN,
+  path: 'total',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at castUpdateVal (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\helpers\query\castUpdate.js:562:19)
+      at walkUpdatePath (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\helpers\query\castUpdate.js:373:24)
+      at castUpdate (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\helpers\query\castUpdate.js:100:7)
+      at model.Query._castUpdate (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5126:10) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'number'
+}
+[2023-04-28T10:23:42.924] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:24:19.656] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:24:19.711] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:24:54.812] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:24:54.864] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:25:05.750] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:26:05.841] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:26:05.894] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:26:21.452] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:26:21.503] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:26:38.492] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:27:08.689] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:27:46.604] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:28:10.718] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:28:56.146] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:29:08.488] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:29:23.468] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:29:27.999] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:29:33.229] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:29:39.602] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:30:52.608] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:30:52.661] [ERROR] error - GET /api/productos/ASDFSADSDFSD 404
+[2023-04-28T10:31:14.259] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:14.262] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:31:21.576] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:21.580] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:31:21.584] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:21.588] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:31:55.345] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:55.348] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:31:59.282] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:59.286] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:31:59.290] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:31:59.294] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:32:18.335] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:32:18.339] [ERROR] error - GET /api/productos/fsdf 404
+[2023-04-28T10:34:13.089] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:34:13.095] [ERROR] error - GET /api/productos/fsdf 200
+[2023-04-28T10:34:13.099] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:34:13.104] [ERROR] error - GET /api/productos/fsdf 304
+[2023-04-28T10:34:59.388] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:34:59.393] [ERROR] error - GET /api/productos/fsdf 304
+[2023-04-28T10:34:59.397] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdf"',
+  kind: 'ObjectId',
+  value: 'fsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:34:59.401] [ERROR] error - GET /api/productos/fsdf 304
+[2023-04-28T10:35:08.092] [ERROR] error - CastError: Cast to ObjectId failed for value "sadfa" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"sadfa"',
+  kind: 'ObjectId',
+  value: 'sadfa',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:35:08.095] [ERROR] error - GET /api/productos/sadfa 200
+[2023-04-28T10:35:17.771] [ERROR] error - CastError: Cast to ObjectId failed for value "sadfa" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"sadfa"',
+  kind: 'ObjectId',
+  value: 'sadfa',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-04-28T10:35:17.774] [ERROR] error - GET /api/productos/sadfa 304
+[2023-04-29T16:37:43.049] [ERROR] error - POST /api/order 422
+[2023-04-29T16:38:21.515] [ERROR] error - POST /api/order 422
+[2023-04-29T16:40:14.515] [ERROR] error - ReferenceError: logInfo is not defined
+    at createOrder (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/order.controller.js:83:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-04-29T16:40:15.513] [ERROR] error - ReferenceError: logInfo is not defined
+    at createOrder (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/order.controller.js:101:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-04-29T16:40:16.416] [ERROR] error - ReferenceError: logInfo is not defined
+    at createOrder (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/order.controller.js:120:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-05-02T12:07:54.666] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:10:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:13:12.931] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:10:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:19:42.742] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:27:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:10:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:19:50.742] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Namespace.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:10:46)
+    at Namespace.emit (node:events:390:28)
+    at Namespace.emitReserved (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:269:14)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\namespace.js:231:22
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:43:18.363] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Socket.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:11:55)
+    at Socket.emit (node:events:390:28)
+    at Socket.emitUntyped (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:69:22)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\socket.js:703:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:44:26.564] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Socket.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:11:55)
+    at Socket.emit (node:events:390:28)
+    at Socket.emitUntyped (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:69:22)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\socket.js:703:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T12:50:51.773] [ERROR] error - TypeError: this.coleccion.find is not a function
+    at MessageDaoMongoDb.listAll (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:26:42)
+    at MessageService.getAllMessages (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:10:32)
+    at Socket.<anonymous> (file:///D:/Cursos/CoderHouse/e-commerce3/src/sockets.js:11:55)
+    at Socket.emit (node:events:390:28)
+    at Socket.emitUntyped (D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\typed-events.js:69:22)
+    at D:\Cursos\CoderHouse\e-commerce3\node_modules\socket.io\dist\socket.js:703:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-05-02T14:50:26.079] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:55:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T14:51:05.735] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:55:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T14:52:06.952] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T14:57:51.599] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T14:59:24.473] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T15:02:57.639] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T15:04:03.590] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T15:06:54.546] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T15:07:28.472] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T15:11:40.801] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:55:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T19:11:55.595] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T19:12:33.118] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:38:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T19:13:24.490] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:34)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T19:14:51.373] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-02T19:15:56.574] [ERROR] error - TypeError: this.coleccion.create is not a function
+    at MessageDaoMongoDb.save (file:///D:/Cursos/CoderHouse/e-commerce3/src/classes/MongodbDAO.js:37:43)
+    at MessageService.createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/services/message.service.js:54:48)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMessage (file:///D:/Cursos/CoderHouse/e-commerce3/src/controllers/message.controller.js:43:23)
+[2023-05-04T19:53:25.709] [ERROR] error - GET /api/productos/category/fsa 404
+[2023-05-04T19:56:57.434] [ERROR] error - GET /api/productos/category/fsa 200
+[2023-05-04T19:57:17.785] [ERROR] error - CastError: Cast to ObjectId failed for value "gdfgdfgdg" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"gdfgdfgdg"',
+  kind: 'ObjectId',
+  value: 'gdfgdfgdg',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-05-04T19:57:17.790] [ERROR] error - GET /api/productos/gdfgdfgdg 404
+[2023-05-04T20:01:38.077] [ERROR] error - CastError: Cast to ObjectId failed for value "gdfgdfgdg" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"gdfgdfgdg"',
+  kind: 'ObjectId',
+  value: 'gdfgdfgdg',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-05-04T20:01:38.085] [ERROR] error - GET /api/productos/gdfgdfgdg 404
+[2023-05-04T20:01:38.091] [ERROR] error - CastError: Cast to ObjectId failed for value "gdfgdfgdg" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"gdfgdfgdg"',
+  kind: 'ObjectId',
+  value: 'gdfgdfgdg',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-05-04T20:01:38.094] [ERROR] error - GET /api/productos/gdfgdfgdg 404
+[2023-05-04T20:02:16.287] [ERROR] error - GET /api/productos/category/dfsaf 404
+[2023-05-04T20:03:40.309] [ERROR] error - CastError: Cast to ObjectId failed for value "fsdfsdf" (type string) at path "_id" for model "productos"
+    at model.Query.exec (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"fsdfsdf"',
+  kind: 'ObjectId',
+  value: 'fsdfsdf',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Query.cast (D:\Cursos\CoderHouse\e-commerce3\node_modules\mongoose\lib\query.js:5341:12),
+  valueType: 'string'
+}
+[2023-05-04T20:03:40.315] [ERROR] error - GET /api/productos/fsdfsdf 404
+[2023-05-04T20:04:04.659] [ERROR] error - GET /api/productos/63b7564243c072762475f62a 404
+[2023-05-04T20:04:12.661] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:04:19.616] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:04:19.669] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:05:48.515] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:05:51.063] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:06:09.066] [ERROR] error - GET /api/productos/category/dsadasd 404
+[2023-05-04T20:07:03.893] [ERROR] error - GET /api/productos/category/dildos 404
+[2023-05-04T20:07:15.016] [ERROR] error - GET /api/productos/category/videojuegos 404
+[2023-05-04T20:07:59.996] [ERROR] error - GET /api/productos/category/videojuegos 404
+[2023-05-04T20:08:54.336] [ERROR] error - GET /api/productos/64471505092a585c018b0457 404
+[2023-05-04T20:11:00.094] [ERROR] error - GET /api/productos/category/carpas 404
+[2023-05-04T20:11:00.146] [ERROR] error - GET /api/productos/category/carpas 404
+[2023-05-04T20:42:53.691] [ERROR] error - GET /api/user/644ac85b6386d06a59422547 500
+[2023-05-04T20:43:56.642] [ERROR] error - GET /api/user/644ac85b6386d06a59422547 404
+[2023-05-05T22:27:26.221] [ERROR] error - ReferenceError: email is not defined
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:59:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-05-05T22:30:31.526] [ERROR] error - ReferenceError: logInfo is not defined
+    at file:///D:/Cursos/CoderHouse/e-commerce3/src/routers/auth.routes.js:64:7
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-05-05T23:41:20.247] [ERROR] error - DELETE /consultas/user/644ac85b6386d06a59422547/consulta/644c60879d1035c66f5bd046 404

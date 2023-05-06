@@ -10,3 +10,55 @@
 [2023-03-08T15:07:44.501] [WARN] warn - POST /signup - Ruta inexistente
 [2023-03-09T00:54:06.627] [WARN] warn - POST /login - Ruta inexistente
 [2023-03-09T12:14:47.452] [WARN] warn - GET / - Ruta inexistente
+[2023-04-21T12:57:50.494] [WARN] warn - GET / - Ruta inexistente
+[2023-04-22T19:53:20.577] [WARN] warn - GET /consultas - Ruta inexistente
+[2023-04-22T19:56:20.032] [WARN] warn - GET /consultas 500
+[2023-04-22T19:57:00.068] [WARN] warn - GET /consultas 500
+[2023-04-23T11:57:19.202] [WARN] warn - GET /consultas 500
+[2023-04-23T11:58:36.618] [WARN] warn - GET /consultas 500
+[2023-04-23T16:23:38.973] [WARN] warn - GET / - Ruta inexistente
+[2023-04-23T16:23:43.866] [WARN] warn - GET /favicon.ico - Ruta inexistente
+[2023-04-24T12:21:29.632] [WARN] warn - GET /favicon.ico - Ruta inexistente
+[2023-04-24T20:38:09.101] [WARN] warn - PUT /api/productos/644712d8821bc21a69829955 500
+[2023-04-24T20:39:42.433] [WARN] warn - PUT /api/productos/644712d8821bc21a69829955dsa 500
+[2023-04-24T20:40:30.794] [WARN] warn - PUT /api/productos/644712d8821bc21a69829955 500
+[2023-04-24T20:41:52.984] [WARN] warn - PUT /api/productos/644712d8821bc21a69829955 500
+[2023-04-24T20:44:29.364] [WARN] warn - PUT /api/productos/644712d8821bc21a69829955 500
+[2023-04-24T21:06:12.594] [WARN] warn - POST /api/carrito/6447194639a8ad88dc716422/productos 500
+[2023-04-24T21:08:20.383] [WARN] warn - POST /api/carrito/6447194639a8ad88dc716422/productos 500
+[2023-04-24T21:14:26.965] [WARN] warn - DELETE /api/carrito/6447194639a8ad88dc716422/productos/63b7564243c072762475f62d 500
+[2023-04-25T23:57:00.980] [WARN] warn - GET /consultas/user/6448913fde37947ca4adad20 500
+[2023-04-25T23:57:44.810] [WARN] warn - GET /consultas/user/6448913fde37947ca4adad20 500
+[2023-04-27T15:47:18.472] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T15:47:18.479] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T15:47:35.477] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T15:47:35.482] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T15:48:57.929] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T15:49:00.203] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-27T16:13:12.823] [WARN] warn - GET /api/carrito - Ruta inexistente
+[2023-04-28T10:34:13.104] [WARN] warn - GET /api/productos/fsdf 500
+[2023-04-28T10:34:59.394] [WARN] warn - GET /api/productos/fsdf 500
+[2023-04-28T10:34:59.401] [WARN] warn - GET /api/productos/fsdf 500
+[2023-04-28T10:35:17.775] [WARN] warn - GET /api/productos/sadfa 500
+[2023-04-28T21:31:15.339] [WARN] warn - DELETE /api/productos/644c6531e5adab16e56434f9 500
+[2023-04-28T21:31:38.790] [WARN] warn - DELETE /api/productos/644c6531e5adab16e56434f9 500
+[2023-04-29T16:26:48.596] [WARN] warn - POST /api/orden - Ruta inexistente
+[2023-04-29T16:29:54.210] [WARN] warn - POST /api/orden - Ruta inexistente
+[2023-04-29T16:30:34.747] [WARN] warn - POST /api/orden - Ruta inexistente
+[2023-05-02T12:43:18.389] [WARN] warn - POST /api/consultas - Ruta inexistente
+[2023-05-02T12:44:26.571] [WARN] warn - POST /api/consultas - Ruta inexistente
+[2023-05-02T12:50:51.778] [WARN] warn - POST /api/consultas - Ruta inexistente
+[2023-05-02T14:32:29.226] [WARN] warn - POST /api/consultas - Ruta inexistente
+[2023-05-02T14:33:40.504] [WARN] warn - POST /consultas 500
+[2023-05-02T14:34:28.547] [WARN] warn - POST /consultas 500
+[2023-05-02T14:34:43.907] [WARN] warn - POST /consultas 500
+[2023-05-02T14:35:03.197] [WARN] warn - POST /consultas 500
+[2023-05-02T14:37:39.116] [WARN] warn - POST /consultas 500
+[2023-05-02T14:38:22.209] [WARN] warn - POST /consultas 500
+[2023-05-02T14:39:04.310] [WARN] warn - POST /consultas 500
+[2023-05-02T14:39:08.892] [WARN] warn - POST /consultas 500
+[2023-05-02T14:39:15.824] [WARN] warn - POST /consultas 500
+[2023-05-02T14:40:31.707] [WARN] warn - POST /consultas 500
+[2023-05-02T14:44:18.161] [WARN] warn - POST /consultas 500
+[2023-05-02T14:49:15.579] [WARN] warn - POST /consultas 500
+[2023-05-04T20:42:07.548] [WARN] warn - GET /api/user/644ac85b6386d06a59422547 - Ruta inexistente

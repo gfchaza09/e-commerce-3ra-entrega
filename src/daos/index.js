@@ -1,58 +1,53 @@
-let productosDao;
-let carritoDao;
-let usuariosDao;
+// Archivo DAO
+import ProductDaoArchivo from "./product/ProductDaoArchivo.js";
+import CartDaoArchivo from "./cart/CartDaoArchivo.js";
 
-switch ("mongodb") {
-  case "json":
-    const { default: ProductosDaoArchivo } = await import(
-      "./productos/ProductosDaoArchivo.js"
-    );
-    const { default: CarritoDaoArchivo } = await import(
-      "./carrito/CarritoDaoArchivo.js"
-    );
+// Memoria DAO
+import ProductDaoMem from "./product/ProductDaoMem.js";
+import CartDaoMem from "./cart/CartDaoMem.js";
 
-    productosDao = new ProductosDaoArchivo();
-    carritoDao = new CarritoDaoArchivo();
+// Firebase DAO
+import ProductDaoFirebase from "./product/ProductDaoFirebase.js";
+import CartDaoFirebase from "./cart/CartDaoFirebase.js";
+
+// Mongo DAO
+import ProductDaoMongoDb from "./product/ProductDaoMongoDb.js";
+import CartDaoMongoDb from "./cart/CartDaoMongoDb.js";
+import OrderDaoMongoDb from "./order/OrderDaoMongoDb.js";
+import UserDaoMongoDb from "./user/UserDaoMongoDb.js";
+import MessageDaoMongoDb from "./message/MessageDaoMongoDb.js";
+
+let productosDao = null;
+let carritoDao = null;
+let usuariosDao = null;
+let mensajesDao = null;
+let ordenDao = null;
+
+const PERS = process.env.PERS || "mongodb";
+
+switch (PERS) {
+  case "archive":
+    productosDao = ProductDaoArchivo.getInstance();
+    carritoDao = CartDaoArchivo.getInstance();
     break;
-  case "firebase":
-    const { default: ProductosDaoFirebase } = await import(
-      "./productos/ProductosDaoFirebase.js"
-    );
-    const { default: CarritoDaoFirebase } = await import(
-      "./carrito/CarritoDaoFirebase.js"
-    );
 
-    productosDao = new ProductosDaoFirebase();
-    carritoDao = new CarritoDaoFirebase();
-    break;
-  case "mongodb":
-    const { default: ProductosDaoMongoDb } = await import(
-      "./productos/ProductosDaoMongoDb.js"
-    );
-    const { default: CarritoDaoMongoDb } = await import(
-      "./carrito/CarritoDaoMongoDb.js"
-    );
-    const { default: UsuariosDaoMongoDb } = await import(
-      "./usuarios/UsuariosDaoMongoDb.js"
-    );
-
-    productosDao = new ProductosDaoMongoDb();
-    carritoDao = new CarritoDaoMongoDb();
-    usuariosDao = new UsuariosDaoMongoDb();
-    break;
   case "memory":
-    const { default: ProductosDaoMem } = await import(
-      "./productos/ProductosDaoMem.js"
-    );
-    const { default: CarritoDaoMem } = await import(
-      "./carrito/CarritoDaoMem.js"
-    );
-
-    productosDao = new ProductosDaoMem();
-    carritoDao = new CarritoDaoMem();
+    productosDao = ProductDaoMem.getInstance();
+    carritoDao = CartDaoMem.getInstance();
     break;
-  default:
+
+  case "firebase":
+    productosDao = ProductDaoFirebase.getInstance();
+    carritoDao = CartDaoFirebase.getInstance();
+    break;
+
+  case "mongodb":
+    productosDao = ProductDaoMongoDb.getInstance();
+    carritoDao = CartDaoMongoDb.getInstance();
+    ordenDao = OrderDaoMongoDb.getInstance();
+    mensajesDao = MessageDaoMongoDb.getInstance();
+    usuariosDao = UserDaoMongoDb.getInstance();
     break;
 }
 
-export { productosDao, carritoDao, usuariosDao };
+export { productosDao, carritoDao, usuariosDao, mensajesDao, ordenDao };
